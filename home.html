@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payoo dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/utilities.js" defer></script>
+    <script src="./js/addMoney.js" defer></script>
+    <script src="./js/cashout.js" defer></script>
+    <script src="./js/features.js" defer></script>
+</head>
+<body>
+    <main class="flex justify-center">
+  
+        <div class="artboard phone-3 border-2 overflow-auto">
+
+            <!-- stat -->
+            <div class="stats shadow">
+                <div class="stat">
+                  <div class="stat-value" id="current-balance">9400</div>
+                  <div class="stat-desc">Availble balane</div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="flex justify-center gap-5">
+                <button class="btn" id="show-add-money-form">Add Money</button>
+                <button class="btn" id="show-cashout-form">Cashout</button>
+                <button class="btn" id="show-transection-list">Transection</button>
+            </div>
+        
+             
+
+            <!-- add money form -->
+            <form class="card-body" id="add-money-form">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input type="text" placeholder="amount" class="input input-bordered" id="add-money-field" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin</span>
+                  </label>
+                  <input type="password" placeholder="Pin" class="input input-bordered" id="pin-input" required />
+                </div>
+                <div class="form-control mt-6">
+                  <button class="btn btn-primary" id="add-money-btn">Add Money</button>
+                </div>
+              </form>
+
+              <!-- cashout form -->
+              <form class="card-body hidden" id="cashout-form">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input type="text" placeholder="amount" class="input input-bordered" id="cashout-field" required />
+                </div> 
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin</span>
+                  </label>
+                  <input type="password" placeholder="Pin" class="input input-bordered" id="cashout-pin" required />
+                </div>
+                <div class="form-control mt-6">
+                  <button class="btn btn-primary" id="cashout-btn">Cashout</button>
+                </div>
+              </form>
+
+                  <!-- transection -->
+                    <div id="transection-form" class="hidden">
+                      <h3 class="text-3xl text-center">Transection History</h3>
+                      <div id="transection-container" class="text-center">
+
+                      </div>
+                    </div>
+        </div>
+    </main>
+    
+</body>
+</html>

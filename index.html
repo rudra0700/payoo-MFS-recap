@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payoo MFS</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/login.js" defer></script>
+</head>
+<body>
+   <main class="flex justify-center">
+    <div class="artboard phone-3 border-2">
+
+        <!-- form -->
+        <form class="card-body">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Mobile</span>
+              </label>
+              <input type="text" placeholder="moblie" class="input input-bordered" id="mobile-input" required />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Pin</span>
+              </label>
+              <input type="password" placeholder="pin" class="input input-bordered" id="pin-input" required />
+            </div>
+            <div class="form-control mt-6">
+              <button class="btn btn-primary" id="login-btn">Login</button>
+            </div>
+          </form>
+    </div>
+   </main>
+</body>
+</html>
